@@ -3,7 +3,7 @@
     <ul>
         {%for album in all_albums%}
         <!--Here all_albums is a collection of objects and album impersonates each object in all_albums. This is why album.id and album.album_title make sense-->
-        <li><a href = "{% url 'detail' album.id%}">{{album.album_title}}</a></li>
+        <li><a href = "{% url 'music:detail' album.id%}">{{album.album_title}}</a></li>
         {%endfor%}
     </ul>
 {% else %}
