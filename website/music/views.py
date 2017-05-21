@@ -12,6 +12,8 @@ def index(request):
         html+='<a href="'+url+'">'+album.album_title + '</a><br>'
     return HttpResponse(html)
 """
+"""
+"""
 def index(request):
     all_albums=Album.objects.all()
     #template=loader.get_template('music/index.html')
